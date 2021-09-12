@@ -18,7 +18,7 @@
     <div v-else>
       No posts found.
     </div>
-    <b-modal v-model="mapModal" size="xl" title="BootstrapVue">
+    <b-modal v-model="mapModal" size="xl" title="Target Location">
       <Map :lat="lat" :lng="lng"></Map>
       <!-- <p class="my-4">Lat: {{lat}}</p>
       <p class="my-4">lng: {{lng}}</p> -->
@@ -54,7 +54,8 @@ export default {
   mounted () {
     axios.get(`https://api.json-generator.com/templates/Xp8zvwDP14dJ/data`, {
       headers: {
-        'Authorization': `Bearer ${process.env.API_KEY}`
+        // 'Authorization': `Bearer ${process.env.API_KEY}`
+        'Authorization': `Bearer v3srs6i1veetv3b2dolta9shrmttl72vnfzm220z`
       }
     })
       .then(res => {
