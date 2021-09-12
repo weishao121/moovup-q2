@@ -1,6 +1,5 @@
 <template>
   <div>
-    Hello from map: Lat: {{lat}} Lng: {{lng}}
     <div id="map" class="google-map"></div>
   </div>
 </template>
