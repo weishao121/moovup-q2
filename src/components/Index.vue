@@ -54,8 +54,8 @@ export default {
   mounted () {
     axios.get(`https://api.json-generator.com/templates/Xp8zvwDP14dJ/data`, {
       headers: {
-        // 'Authorization': `Bearer ${process.env.API_KEY}`
-        'Authorization': `Bearer v3srs6i1veetv3b2dolta9shrmttl72vnfzm220z`
+        // Provided Api key
+        'Authorization': `Bearer ${process.env.API_KEY}`
       }
     })
       .then(res => {
